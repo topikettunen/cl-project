@@ -1,21 +1,23 @@
-* <%= (string-capitalize (getf env :name)) %> <% @if description %> - <% @var description %><% @endif %>
+# <%= (getf env :name) %><% @if description %> - <% @var description %><% @endif %>
 
-** Usage
+## Usage
 
-** Installation
+Shh... nothing to see here... yet...
+
+## Installation
 <%- @if author %>
 
-** Author
+## Author
 
-+ <% @var author %><% @if email %> (<% @var email %>)<% @endif %>
+* <% @var author %><% @if email %> (<% @var email %>)<% @endif %>
 
-** Copyright
+## Copyright
 
 Copyright (c) <%= (local-time:timestamp-year (local-time:now)) %> <% @var author %><% @if email %> (<% @var email %>)<% @endif %>
 <%- @endif %>
 <%- @if license %>
 
-** License
+## License
 
 Licensed under the <% @var license %> License.
 <%- @endif %>

@@ -1,3 +1,4 @@
+(in-package :cl-user)
 (defpackage <% @var name %>/tests/main
   (:use :cl
         :<% @var name %>
